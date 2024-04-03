@@ -129,30 +129,49 @@ button {
 }
 .main {
   background: #2e2f42;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  /* padding-top: 188px;
+  padding-bottom: 188px; */
+  padding-top: 72px;
+  padding-bottom: 72px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/main-bg.jpg);
+    url(../images/main-bg-mob.jpeg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
-  max-width: 1440px;
+  /* max-width: 1440px; */
+  max-width: 360px;
   margin: 0 auto;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/main-bg-mob-2x.jpeg);
+  }
 }
 
 .main-title {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  /* font-size: 56px;
+  line-height: 1.07; */
+  font-size: 36px;
+  line-height: 1.11111;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  max-width: 496px;
+  /* max-width: 496px; */
+  max-width: 216px;
   margin: 0 auto;
-  margin-bottom: 48px;
+  /* margin-bottom: 48px; */
+  margin-bottom: 72px;
 }
 
 .main-btn {
@@ -247,6 +266,11 @@ button {
   padding-bottom: 96px;
   padding-top: 96px;
 }
+
+.team .container {
+  padding-right: 28px;
+  padding-left: 28px;
+}
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -271,6 +295,7 @@ button {
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   /* width: calc((100% - 3 * 24px) / 4); */
   width: 100%;
+  text-align: center;
 }
 .team-image {
   margin: 0 auto;
@@ -284,7 +309,7 @@ button {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  text-align: center;
+  /* text-align: center; */
   color: #2e2f42;
   margin-bottom: 8px;
 }
@@ -292,7 +317,7 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: center;
+  /* text-align: center; */
   color: #434455;
   margin-bottom: 8px;
 }
@@ -756,7 +781,40 @@ button {
 @media screen and (min-width: 768px) {
   .container {
     width: 736px;
+    padding-left: 0;
+    padding-right: 0;
   }
+
+  .main {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    max-width: 768px;
+    height: 436px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/main-bg-tab.jpeg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .main {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/main-bg-tab-2x.jpeg);
+    }
+  }
+  .main-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+
   .goals-list {
     gap: 72px 24px;
   }
@@ -769,20 +827,51 @@ button {
 
   .team .container {
     width: 584px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .team-list {
-    gap: 62px 24px;
+    gap: 64px 24px;
   }
   .team-item {
     width: calc((100% - 24px) / 2);
   }
-  .team-image {
-  }
 }
 
 @media screen and (min-width: 1158px) {
-  .team .container {
+  .container {
     width: 1128px;
+  }
+
+  .main {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    max-width: 1440px;
+    height: 600px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/main-bg.jpeg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .main {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/main-bg-2x.jpeg);
+    }
+  }
+
+  .main-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin-bottom: 48px;
   }
   .goals {
     padding-top: 120px;
@@ -806,6 +895,11 @@ button {
     display: flex;
   }
 
+  .team .container {
+    width: 1128px;
+    padding-left: 0;
+    padding-right: 0;
+  }
   .team {
     padding-bottom: 120px;
     padding-top: 120px;
