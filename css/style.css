@@ -76,6 +76,7 @@ button {
   display: none;
   gap: 40px;
 }
+
 .nav-link {
   font-weight: 500;
   font-size: 16px;
@@ -112,9 +113,9 @@ button {
   margin-left: auto;
 }
 .address-list {
-  /* display: flex; */
+  display: flex;
   display: none;
-  gap: 40px;
+  /* gap: 40px; */
 }
 .address-link {
   color: #434455;
@@ -129,13 +130,10 @@ button {
 .address-link:focus {
   color: #404bbf;
 }
-
-@media (max-width: 767px) {
-  .menu-open {
-    border: none;
-    background-color: transparent;
-    fill: #2f2f37;
-  }
+.menu-open {
+  border: none;
+  background-color: transparent;
+  fill: #2f2f37;
 }
 
 .menu-open-btn {
@@ -170,6 +168,7 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-color: #e7e9fc;
 }
 
 .menu-close-btn {
@@ -928,6 +927,34 @@ button {
     width: 768px;
   }
 
+  .menu-open {
+    display: none;
+  }
+  .header-container {
+    height: 72px;
+  }
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .address-text {
+    height: 14px;
+  }
+  .address-link {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+
+  .logo {
+    margin-right: 120px;
+  }
+
   .main {
     padding-top: 112px;
     padding-bottom: 112px;
@@ -1057,6 +1084,24 @@ button {
     padding-right: 15px;
   }
 
+  .address-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .address-text {
+    height: 14px;
+  }
+  .address-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  .logo {
+    margin-right: 76px;
+  }
+
   .main {
     padding-top: 188px;
     padding-bottom: 188px;
@@ -1138,37 +1183,39 @@ button {
   }
 
   .footer {
-    padding-top: 96px;
-    padding-bottom: 96px;
-    width: 768px;
-    height: 456px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    height: 312px;
     background-position: center;
   }
 
-  .footer .logo {
-    display: inline-block;
+  .footer-box {
+    align-items: baseline;
+    gap: 0;
+  }
+
+  .footer-logo {
+    margin-right: 120px;
   }
   .footer-box {
-    height: 264px;
-    width: 584px;
-    width: 528px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 72px 24px;
-    margin-left: 108px;
-    margin-right: 164px;
+    width: 1158px;
+    height: 112px;
+    margin: 0 auto;
   }
 
   .footer-text-social {
     text-align: start;
   }
 
+  .footer-box-list {
+    margin-right: 80px;
+  }
   .footer-box-form {
     margin-left: 80px;
     width: 453px;
-    height: 80px;
   }
+
   .footer-form {
     display: flex;
     gap: 24px;
@@ -1182,10 +1229,7 @@ button {
     width: 264px;
     margin-bottom: 0;
   }
-  .footer-logo {
-    /* margin-right: 24px; */
-    width: 264px;
-  }
+
   .footer-box-form {
     margin: 0;
   }
