@@ -9,9 +9,8 @@ a {
 ul,
 ol {
   list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
 }
 h1,
 h2,
@@ -1024,15 +1023,17 @@ button {
     padding-right: 15px;
   }
 
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   .logo {
     margin-right: 76px;
   }
   .address-list {
     flex-direction: row;
     gap: 40px;
-  }
-  .address-text {
-    height: 14px;
   }
   .address-link {
     font-size: 16px;
