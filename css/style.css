@@ -486,8 +486,6 @@ button {
 }
 .footer {
   background: #2e2f42;
-  width: 320px;
-  height: 664px;
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -506,6 +504,8 @@ button {
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  padding: 0;
+  margin-bottom: 16px;
 }
 .footer-logo-part {
   font-family: "Raleway", sans-serif;
@@ -516,7 +516,6 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  margin-top: 16px;
 }
 
 .footer-text-social {
